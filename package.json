@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@ckeditor/ckeditor5-upload@^1.0.0-alpha.1",
+        "scope": "@ckeditor",
+        "escapedName": "@ckeditor%2fckeditor5-upload",
+        "name": "@ckeditor/ckeditor5-upload",
+        "rawSpec": "^1.0.0-alpha.1",
+        "spec": ">=1.0.0-alpha.1 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\nc\\Documents\\ckeditor5-build-classic"
+    ]
+  ],
+  "_from": "@ckeditor/ckeditor5-upload@>=1.0.0-alpha.1 <2.0.0",
+  "_id": "@ckeditor/ckeditor5-upload@1.0.0-alpha.1",
+  "_inCache": true,
+  "_location": "/@ckeditor/ckeditor5-upload",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ckeditor5-upload-1.0.0-alpha.1.tgz_1507033864768_0.41408091713674366"
+  },
+  "_npmUser": {
+    "name": "ckeditor",
+    "email": "npm@cksource.com"
+  },
+  "_npmVersion": "4.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@ckeditor/ckeditor5-upload@^1.0.0-alpha.1",
+    "scope": "@ckeditor",
+    "escapedName": "@ckeditor%2fckeditor5-upload",
+    "name": "@ckeditor/ckeditor5-upload",
+    "rawSpec": "^1.0.0-alpha.1",
+    "spec": ">=1.0.0-alpha.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "/@ckeditor/ckeditor5-adapter-ckfinder",
+    "/@ckeditor/ckeditor5-easy-image"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ckeditor/ckeditor5-upload/-/ckeditor5-upload-1.0.0-alpha.1.tgz",
+  "_shasum": "33191666856ca7325166fb6240f698779309117f",
+  "_shrinkwrap": null,
+  "_spec": "@ckeditor/ckeditor5-upload@^1.0.0-alpha.1",
+  "_where": "C:\\Users\\nc\\Documents\\ckeditor5-build-classic",
+  "author": {
+    "name": "CKSource",
+    "url": "http://cksource.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5-upload/issues"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-engine": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-ui": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-utils": "^1.0.0-alpha.1"
+  },
+  "description": "Upload Feature for CKEditor 5.",
+  "devDependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-clipboard": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-dev-lint": "^3.1.4",
+    "@ckeditor/ckeditor5-editor-classic": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-enter": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-heading": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-image": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-list": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-paragraph": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-typing": "^1.0.0-alpha.1",
+    "@ckeditor/ckeditor5-undo": "^1.0.0-alpha.1",
+    "eslint-config-ckeditor5": "^1.0.6",
+    "gulp": "^3.9.1",
+    "guppy-pre-commit": "^0.4.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "33191666856ca7325166fb6240f698779309117f",
+    "tarball": "https://registry.npmjs.org/@ckeditor/ckeditor5-upload/-/ckeditor5-upload-1.0.0-alpha.1.tgz"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ],
+  "gitHead": "af3e7bdb767d97988755e12544372f86f4cea11f",
+  "homepage": "https://ckeditor5.github.io",
+  "keywords": [
+    "ckeditor5",
+    "ckeditor5-lib"
+  ],
+  "license": "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)",
+  "maintainers": [
+    {
+      "name": "ckeditor",
+      "email": "npm@cksource.com"
+    }
+  ],
+  "name": "@ckeditor/ckeditor5-upload",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckeditor/ckeditor5-upload.git"
+  },
+  "scripts": {},
+  "version": "1.0.0-alpha.1"
+}
