@@ -12,7 +12,7 @@ import Template from '@ckeditor/ckeditor5-ui/src/template';
 import ViewCollection from '@ckeditor/ckeditor5-ui/src/viewcollection';
 
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-import LabeledInputView from '@ckeditor/ckeditor5-ui/src/labeledinput/labeledinputview';
+import EVFrameView from './evframeview';
 import InputTextView from '@ckeditor/ckeditor5-ui/src/inputtext/inputtextview';
 
 import submitHandler from '@ckeditor/ckeditor5-ui/src/bindings/submithandler';
@@ -31,10 +31,13 @@ export default class EVFinderView extends View {
 	/**
 	 * @inheritDoc
 	 */
-	constructor( locale ) {
-		super( locale );
+	constructor(locale, config) {
+		super(locale);
 
 		const t = locale.t;
+
+		this.config = config;
+		console.log('config', config);
 
 		/**
 		 * Tracks information about DOM focus in the form.
@@ -57,7 +60,7 @@ export default class EVFinderView extends View {
 		 *
 		 * @member {module:ui/labeledinput/labeledinputview~LabeledInputView}
 		 */
-		this.urlInputView = this._createUrlInput();
+		this.urlInputView = this._createContainer();
 
 		/**
 		 * The Save button view.
@@ -193,15 +196,12 @@ export default class EVFinderView extends View {
 	 * @private
 	 * @returns {module:ui/labeledinput/labeledinputview~LabeledInputView} Labeled input view instance.
 	 */
-	_createUrlInput() {
+	_createContainer() {
 		const t = this.locale.t;
 
-		const labeledInput = new LabeledInputView( this.locale, InputTextView );
+		const container = new EVFrameView(this.locale, this.config);
 
-		labeledInput.label = t( 'Link URL' );
-		labeledInput.inputView.placeholder = 'https://example.com';
-
-		return labeledInput;
+		return container;
 	}
 
 	/**
