@@ -1,9 +1,4 @@
 /**
- * @license Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
  * @module upload/ui/evfinderview
  */
 
@@ -37,7 +32,6 @@ export default class EVFinderView extends View {
 		const t = locale.t;
 
 		this.config = config;
-		console.log('config', config);
 
 		/**
 		 * Tracks information about DOM focus in the form.
@@ -76,13 +70,6 @@ export default class EVFinderView extends View {
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
 		this.cancelButtonView = this._createButton( t( 'Cancel' ), 'cancel' );
-
-		/**
-		 * The Unlink button view.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView}
-		 */
-		this.unlinkButtonView = this._createButton( t( 'Unlink' ), 'unlink' );
 
 		/**
 		 * A collection of views which can be focused in the form.
@@ -146,8 +133,7 @@ export default class EVFinderView extends View {
 
 					children: [
 						this.saveButtonView,
-						this.cancelButtonView,
-						this.unlinkButtonView
+						this.cancelButtonView
 					]
 				}
 			]
@@ -160,8 +146,7 @@ export default class EVFinderView extends View {
 		const childViews = [
 			this.urlInputView,
 			this.saveButtonView,
-			this.cancelButtonView,
-			this.unlinkButtonView
+			this.cancelButtonView
 		];
 
 		childViews.forEach( v => {
@@ -237,10 +222,4 @@ export default class EVFinderView extends View {
  * Fired when the form view is canceled, e.g. click on {@link #cancelButtonView}.
  *
  * @event cancel
- */
-
-/**
- * Fired when the {@link #unlinkButtonView} is clicked.
- *
- * @event unlink
  */
